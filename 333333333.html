@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me to her</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff0000, #000000, #ff8c00);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            position: relative;  /* This allows absolute positioning inside it */
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* Center the container both vertically and horizontally */
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 2000%;
+            width: 600px;
+        }
+
+        h1 {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .question {
+            font-size: 1.0rem;
+            margin-bottom: 1rem;
+        }
+
+        .question p {
+            margin-bottom: 1rem;  /* Adjust space between paragraphs */
+            font-size: 1rem;      /* Adjust font size */
+            line-height: 1.5;     /* Increase line height for better readability */
+        }
+
+        button {
+            background-color: #ff0000;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff9500;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .final-message {
+            font-size: 1.5rem;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        img {
+            width: 230px;  /* Adjust the size of the image */
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .spotify-link button {
+            background-color: #1DB954; /* Spotify green */
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            text-decoration: none; /* Removes underline */
+        }
+
+        .spotify-link button:hover {
+            background-color: #1ed760; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Me to Her!</h1>
+        <div id="question-container">
+            <div class="question" id="q1">
+                <img src="https://i.ibb.co/DY7d81M/6b42d9db943ff89a7938ccddfaf686cb.jpg" alt="Image for question 1">
+                <p>Hii dear, there are lots of things I wanna talk about so please let me take my time with my words!!</p>
+                <button onclick="nextQuestion(1)">Next</button>
+            </div>
+            <div class="question hidden" id="q2">
+                <img src="https://i.ibb.co/HdnhMLq/zskdrsv9yoha1.jpg" alt="Image for question 2">
+                <p>I am so grateful for you, honestly I didn't expect to meet with someone like you, you're genuinely so sweet to me and I really love your personality, I am always excited to hear from you, just to wake up to your messages and just know how is your day going, I love and enjoy talking to you, I wish I could be with you in person and tell you all of these things, but I am sure in the near future I could do that, so please be patient and wait for me. Whenever I talk to you, I just cant stop smiling, my heart is beating so fast and I am physically unwell cause I cant handle all of these emotions at once.</p>                <button onclick="nextQuestion(2)">Next</button>
+            </div>
+            <div class="question hidden" id="q3">
+                <img src="https://i.ibb.co/PrS289j/Untitled165-20241227210321.png" alt="Image for question 3">
+                <p>I cant explain how I feel these past few days, you light up my days and you make me feel so happy, I genuinely cant get enough of you and craving for more, I need you so bad all the time, I need your presence, love and attention. I feel like I already fell for you so hard and it kind of scares me, maybe I am the one you are looking for, I feel like we could complete each other perfectly. I am sorry if I'll be way too clingy sometimes, I promise I will respect your alone time too!
+                </p>
+                <button onclick="nextQuestion(3)">Next</button>
+            </div>
+            <div class="question hidden" id="q4">
+                <img src="https://i.ibb.co/N7CKhyS/f57c8a94dba2c42415b42cda2d4551e3.jpg" alt="Image for question 4">
+                <p>I appreciate that you opened your heart to me and I got to know you, I wanna know more about you, please never hold yourself back with me and never worry about I would ever judge you cause no, I promise I will only show love to you, and I will always respect you, just what you deserve. I promise I will always put you first, you wont have to worry about anything with me, i will always be here for you. I want you to be mine and I want to be yours, I will never do anything that would make you question my love for you, I will always be honest and loyal to you. I will take care of you and you can always count on me. I would never hurt you and please whenever you overthink or you need someone to talk to come to me, let me put your pretty mind at ease, let me be the one for you.
+                </p>
+                <button onclick="nextQuestion(4)">Next!</button>
+            </div>
+            <div class="question hidden" id="q5">
+                <img src="https://i.ibb.co/8gwZBgd/72da293b75d028ac2aa951ae3b57acb4.jpg" alt="Image for question 5">
+                <p>You're so fucking breathtaking, so unbelievably pretty and gorgeous, my heart cant take it, I always question if are you sure you want me??? you're just way too perfect and my whole body is shaking cause you're so attractive, you're so ethereal, I fear my heart is gonna explode!! You have the most enchanting and prettiest eyes that I have ever seen, every features of yours is so perfect and I could genuinely cry about it cause how can someone look this angelic, so heavenly. and your voice, god damn.. it makes me feel sooo many things, I cant calm down whenever I hear your voice like my knees are hitting the floor sooo hard, your voice is so alluring, so captivating, it's so soft.. I wanna listen to you more, I could listen to you forever and never get tired of it, the way you talk your native language is soooo attractive. I wanna learn it so I could hear you talking in your language more hehe.
+                </p>
+                <button onclick="nextQuestion(5)">Next!</button>
+            </div>
+            <div class="question hidden" id="q6">
+                <img src="https://i.ibb.co/vwzqCrt/tumblr-6fa70ae8eb0a85822afc02483644dd4b-6498c404-1280.jpg" alt="Image for question 6">
+                <p>I cant help but imagine all the things we could do together and look forward to do it in the future. I wanna hold your hand, intertwine our fingers, play with your hair, caress your cheeks, hug you and kiss you. Once you are in my arms I wont ever let you go. I might sound crazy but I genuinely meant that I would marry you, living with you sounds like the most perfect future in the world to me. I promise ill give you unlimited love, communicate my feelings well, patience and understanding, not gonna give up on you and only gonna treat you well, you'll always be my only one, you'll always own me and my heart. I will always belong to you, please let me love you.
+                </p>
+                <button onclick="nextQuestion(6)">Next!</button>
+            </div>
+            <div class="question hidden" id="q7">
+                <img src="https://i.ibb.co/crcX44p/Untitled168-20241229032342.png" alt="Image for question 7">
+                <p>With all of things said, I want you to give us a chance, to be happy together, to work on things together and to have a happy life with me. Please be mine, its already hurt me thinking about you being with someone else, I wont let you go, I want you, be only mine? I don't ever wanna share with anyone on you, you belong to me. I will always support you, doesn't matter who is against our kind of love, I won't let them ruin us, I will always put your happiness first and do anything to make you smile. Also let me tell you that how proud I am of you for accepting who you are and going through all of this, I am sorry you had to do it alone, but from now on you have me, you never have to deal with these things alone.
+
+                </p>
+                <button onclick="finalAnswer('Yes')">Yes!</button>
+            </div>
+        </div>
+        <div id="final-message" class="hidden">
+            <p class="final-message"></p>
+            <p>❤️🧡🖤🤍</p>
+            <!-- Spotify Link Button -->
+            <a href="https://open.spotify.com/playlist/01QwuMUCWFNQxJQtaqfMWf?si=PuDJgFcCTBmnl0fA9c5sxw&pi=j75NyZthQDGhA" target="_blank" class="spotify-link">
+                <button>also, listen to the playlist I made for you (in order♥)</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+
+        function nextQuestion(questionNumber) {
+            document.getElementById(`q${questionNumber}`).classList.add('hidden');
+            currentQuestion++;
+            document.getElementById(`q${currentQuestion}`).classList.remove('hidden');
+        }
+
+        function finalAnswer(answer) {
+            document.getElementById('question-container').classList.add('hidden');
+            document.getElementById('final-message').classList.remove('hidden');
+            const message = document.querySelector('.final-message');
+            if (answer === 'Yes') {
+                message.textContent = "Please, be my girlfriend?";
+            } else {
+                message.textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>
